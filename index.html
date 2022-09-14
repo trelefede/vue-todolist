@@ -14,7 +14,7 @@
 <body>
     <div id="app">
         <h1>Title</h1>
-        <input type="text" placeholder="Aggiungi nuova nota" v-model="newItem">
+        <input type="text" placeholder="Aggiungi nuova nota" v-model="newItem" @keyUp.enter="addItem">
         <button @click="addItem">Aggiungi</button>
         <ul>
             <div v-for="(item, index) in toDoList" class="flex">
