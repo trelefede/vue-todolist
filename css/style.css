@@ -1,0 +1,25 @@
+/*** GENERICS ***/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.2rem;
+}
+
+img {
+    width: 100%;
+}
+
+
+/*** UTILITIES ***/
+
+
+
+/*** CONTENT ***/
+.sbarrato {
+    text-decoration: line-through;
+}
