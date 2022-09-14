@@ -27,7 +27,13 @@ const app = new Vue({
     el: '#app',
     data: {
         toDoList,
+        indexArray: '',
+    },
+    methods: {
+        removeItem(index) {
+            this.indexArray = index;
+            toDoList.splice(this.indexArray, 1);
+        }
     }
-
 
 });

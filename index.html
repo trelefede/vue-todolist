@@ -15,7 +15,10 @@
     <div id="app">
         <h1>Title</h1>
         <ul>
-            <li v-for="item in toDoList" :class="item.done ? 'sbarrato' : '' "> {{ item.text }} </li>
+            <div v-for="(item, index) in toDoList" class="flex">
+                <li :class="item.done ? 'sbarrato' : '' "> {{ item.text }} </li>
+                <span @click="removeItem(index)">X</span>
+            </div>
         </ul>
     </div>
 </body>

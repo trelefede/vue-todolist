@@ -20,6 +20,15 @@ img {
 
 
 /*** CONTENT ***/
+
 .sbarrato {
     text-decoration: line-through;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex span {
+    margin-left: 2rem;
 }
