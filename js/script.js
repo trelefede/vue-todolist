@@ -28,11 +28,16 @@ const app = new Vue({
     data: {
         toDoList,
         indexArray: '',
+        newItem: '',
     },
     methods: {
         removeItem(index) {
             this.indexArray = index;
             toDoList.splice(this.indexArray, 1);
+        },
+        addItem() {
+            this.toDoList.unshift(this.newItem);
+            console.log(this.toDoList);
         }
     }
 
