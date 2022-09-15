@@ -33,11 +33,14 @@ const app = new Vue({
     methods: {
         removeItem(index) {
             this.indexArray = index;
-            toDoList.splice(this.indexArray, 1);
+            this.toDoList.splice(this.indexArray, 1);
         },
         addItem() {
-            this.toDoList.unshift(this.newItem);
-            console.log(this.toDoList);
+            const newObject = {
+                text: this.newItem,
+                done: false,
+            }
+            this.toDoList.unshift(newObject);
         }
     }
 
