@@ -18,7 +18,7 @@
         <button @click="addItem">Aggiungi</button>
         <ul>
             <div v-for="(item, index) in toDoList" class="flex">
-                <li :class="item.done ? 'sbarrato' : '' "> {{ item.text }} </li>
+                <li :class="item.done ? 'sbarrato' : '' " @click="toggleItem(item)"> {{ item.text }} </li>
                 <span @click="removeItem(index)">X</span>
             </div>
         </ul>

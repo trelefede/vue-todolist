@@ -41,6 +41,9 @@ const app = new Vue({
                 done: false,
             }
             this.toDoList.unshift(newObject);
+        },
+        toggleItem(item) {
+            item.done = !item.done;
         }
     }
 
